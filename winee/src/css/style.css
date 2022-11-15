@@ -1,0 +1,384 @@
+@import url("https://fonts.googleapis.com/css2?family=Michroma&family=Noto+Sans:wght@100&family=Philosopher&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200&family=Michroma&family=Noto+Sans:wght@100&family=Philosopher&family=Text+Me+One&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Philosopher", sans-serif;
+}
+
+#winee_specials {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 100px 0;
+}
+#winee_specials #img_container {
+  width: 485px;
+  height: 640px;
+  padding: 20px 0;
+}
+#winee_specials #img_container img {
+  width: 485px;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#winee_specials #special_wines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#winee_specials #special_wines #header_info {
+  font-size: 40px;
+  font-weight: lighter;
+}
+#winee_specials #special_wines .spec_info_container {
+  width: 535px;
+  height: 97px;
+  display: flex;
+  gap: 30px;
+}
+#winee_specials #special_wines .spec_info_container img {
+  width: 68px;
+  height: 99px;
+}
+#winee_specials #special_wines .spec_info_container #barrel_icon {
+  width: 68px;
+  height: 84px;
+}
+#winee_specials #special_wines .spec_info_container .spec_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+#winee_specials #special_wines .spec_info_container .spec_info p,
+#winee_specials #special_wines .spec_info_container .spec_info h1 {
+  width: 450px;
+  height: auto;
+}
+#winee_specials #special_wines .spec_info_container .spec_info h1 {
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#winee_specials #special_wines .spec_info_container .spec_info h1:hover {
+  color: #c1001c;
+}
+#winee_specials #special_wines .spec_info_container .spec_info p {
+  line-height: 28px;
+  padding-top: 20px;
+  font-family: "Text Me One", sans-serif;
+}
+
+#banner #sale_banner {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+#banner #sale_banner img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#banner #sale_banner #img_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 18, 16, 0.8470588235);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+}
+#banner #sale_banner #img_overlay #nbc {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+#banner #sale_banner #img_overlay h1 {
+  color: white;
+  font-size: 55px;
+  font-family: "Philosopher", sans-serif;
+  letter-spacing: 8px;
+  font-weight: 500;
+}
+#banner #sale_banner #img_overlay #sales {
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+}
+#banner #sale_banner #img_overlay button {
+  width: 130px;
+  height: 45px;
+  border-color: transparent;
+  color: black;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+#banner #sale_banner #img_overlay button:hover {
+  background-color: #c19450;
+  color: white;
+}
+@media (max-width: 393px) {
+  #banner #sale_banner #img_overlay {
+    width: 100% !important;
+  }
+}
+#banner #new_arrivals {
+  width: 100%;
+  height: 330px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
+}
+#banner #new_arrivals h1 {
+  font-size: 44px;
+  font-weight: 500;
+}
+#banner #new_arrivals p {
+  width: 540px;
+  height: auto;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#banner #new_arrivals button {
+  padding: 15px 25px;
+  border: 1px solid rgba(158, 152, 152, 0.322);
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  font-family: "Philosopher", sans-serif;
+  font-size: 15px;
+  cursor: pointer;
+}
+#banner #new_arrivals button:hover {
+  background-color: #c59137;
+  color: white;
+  border-color: transparent;
+}
+
+#wine_cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+#wine_cards .card {
+  width: 230px;
+  height: 510px;
+  overflow: hidden;
+}
+#wine_cards .card:nth-child(1) .images {
+  background-image: url(../img/pdt2.webp);
+}
+#wine_cards .card:nth-child(1) .images:hover {
+  background-image: url(../img/o1.webp);
+}
+#wine_cards .card:nth-child(2) .images {
+  background-image: url(../img/pdt1.webp);
+}
+#wine_cards .card:nth-child(2) .images:hover {
+  background-image: url(../img/o2.webp);
+}
+#wine_cards .card:nth-child(3) .images {
+  background-image: url(../img/pdt3.webp);
+}
+#wine_cards .card:nth-child(3) .images:hover {
+  background-image: url(../img/o3.webp);
+}
+#wine_cards .card:nth-child(4) .images {
+  background-image: url(../img/pdt4.webp);
+}
+#wine_cards .card:nth-child(4) .images:hover {
+  background-image: url(../img/o4.webp);
+}
+#wine_cards .card .images {
+  width: 230px;
+  height: 307px;
+  margin-bottom: 20px;
+  position: relative;
+  cursor: pointer;
+  background-size: cover;
+  transition: 0.4s ease-in-out;
+}
+#wine_cards .card .images:hover .img_overlay_card {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+#wine_cards .card .images:hover .img_overlay_card button {
+  opacity: 1;
+  transform: translateX(-20px);
+}
+#wine_cards .card .images .img_overlay_card {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  transition: 0.4s ease-in-out;
+}
+#wine_cards .card .images .img_overlay_card button {
+  width: 40px;
+  height: 40px;
+  border-color: transparent;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+#wine_cards .card .images .img_overlay_card button i {
+  color: #c1001c;
+}
+#wine_cards .card .images .img_overlay_card button:hover {
+  background-color: #c1001c;
+}
+#wine_cards .card .images .img_overlay_card button:hover i {
+  color: white;
+}
+#wine_cards .card .footer_items {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 30px;
+}
+#wine_cards .card .footer_items span {
+  padding: 20px 0;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+#wine_cards .card .footer_items span:hover {
+  color: #c1001c;
+}
+#wine_cards .card .footer_items span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  transform: rotate(45deg);
+  background-color: black;
+  top: 53px;
+  left: 59px;
+  margin: 0 auto;
+}
+#wine_cards .card .footer_items p {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  text-align: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.331);
+  color: #c1001c;
+  font-size: 20px;
+}
+#wine_cards .card .footer_items button {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.132);
+  font-size: 16px;
+  font-family: "Philosopher", sans-serif;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+#wine_cards .card .footer_items button:hover {
+  background-color: rgba(197, 145, 55, 0.8078431373);
+  color: white;
+}
+#wine_cards .card .footer_items button i {
+  font-size: 12px;
+  padding-right: 5px;
+}
+
+#our_gallery #gallery_info {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+#our_gallery #gallery_info h1 {
+  font-size: 44px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+#our_gallery #gallery_info p {
+  width: 600px;
+  height: auto;
+  text-align: center;
+  letter-spacing: 1px;
+}
+#our_gallery .gallery_items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#our_gallery .gallery_items .gallery_card {
+  width: 25%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+#our_gallery .gallery_items .gallery_card:hover .gallery_img_overlay {
+  opacity: 1;
+}
+#our_gallery .gallery_items .gallery_card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#our_gallery .gallery_items .gallery_card .gallery_img_overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(193, 0, 29, 0.8784313725);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  transition: 0.4s ease-in-out;
+  opacity: 0;
+}
+#our_gallery .gallery_items .gallery_card .gallery_img_overlay span {
+  color: white;
+  font-size: 30px;
+}
+#our_gallery .gallery_items .gallery_card .gallery_img_overlay p {
+  color: white;
+}
+#our_gallery .gallery_items .gallery_card .gallery_img_overlay button {
+  padding: 12px 30px;
+  border-color: transparent;
+  cursor: pointer;
+  font-family: "Philosopher", sans-serif;
+  font-size: 15px;
+  transition: 0.3s ease-in-out;
+}
+#our_gallery .gallery_items .gallery_card .gallery_img_overlay button:hover {
+  background-color: #c59137;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
